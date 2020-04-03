@@ -4,17 +4,17 @@ const coin = {
         // 1. One point: Randomly set your coin object's "state" property to be either 
         //    0 or 1: use "this.state" to access the "state" property on this object.
         this.state = Math.floor(Math.random() * 2);
-        console.log(flip)
+        console.log(this.state)
 
         return this.state
-    
+
     },
 
     toString: function () {
         // 2. One point: Return the string "Heads" or "Tails", depending on whether
         //    "this.state" is 0 or 1.
-        string = document.createElement("div")
-        return string.textcontent = ((this.state === 0) ? "Heads" : "Tails")
+        // const string; //document.createElement("div")
+        return (this.state === 0) ? "Heads" : "Tails"
 
     },
     toHTML: function () {
@@ -23,12 +23,13 @@ const coin = {
         //    or face-down, depending on whether this.state is 0 or 1.
 
         if (this.state === 0) {
-            image.src(liberty - coin - front.png)
+            image.src = "./Images/liberty-coin-front.png"
         } else {
-            image.src(liberty - coin - back.png)
+            image.src = "./Images/liberty-coin-back.png"
         }
-        
-        return image
+
+        return document.body.appendChild(image)
+
     }
 };
 function display20Flips() {
@@ -36,21 +37,36 @@ function display20Flips() {
     // 4. One point: Use a loop to flip the coin 20 times, each time displaying the result of the flip as a string on the page.  After your loop completes, return an array with the result of each flip.
 
     for (let i = 0; i < 20; i += 1) {
-        results.push(coin.toString)
-        document.body.appendChild(coin.toString)
+        coin.flip()
+        results.push(coin.toString())
     }
+    let sResults = document.createTextNode(results)
+    return document.body.appendChild(sResults)
 
-    return results
 }
 function display20Images() {
     const results = [];
     // 5. One point: Use a loop to flip the coin 20 times, and display the results of each flip as an image on the page.  After your loop completes, return an array with result of each flip.
     for (let i = 0; i < 20; i += 1) {
-        results.push(coin.flip)
-        document.body.appendChild(coin.toHTML)
+        coin.flip()
+        results.push(coin.toHTML())
+        // let hImage = document.()
+        // document.body.appendChild(coin.toHTML)
     }
 
     return results
 }
-console.log(coin)
+display20Flips()
+display20Images()
+
+let backgroundI = document.querySelector("html")
+let title = document.querySelector("h1")
+// let para = document.createTextNode("Coin Object")
+// title.appendChild(para)
+
+title.style.color = "red";
+title.style.display = "flex";
+title.style.justifyContent = "center";
+title.style.alignItems = "center";
+backgroundI.style.background = "black";
 

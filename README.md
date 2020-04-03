@@ -3,6 +3,7 @@
 
 # Development Plan 
 - Produce 0-1 randomly
+ - Math.Floor(Math.Random())
 - connect Heads and Tails strings to my random 0-1 while 
 producing images to match
 - append strings and images to the page
