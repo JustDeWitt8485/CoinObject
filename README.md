@@ -1,5 +1,11 @@
 # GitLab
-- 
+- https://tdse2020.gitlab.io/coin-object-assessment 
+
+# Development Plan 
+- Produce 0-1 randomly
+- connect Heads and Tails strings to my random 0-1 while 
+producing images to match
+- append strings and images to the page
 
 # Assessment: Coin Object
 
