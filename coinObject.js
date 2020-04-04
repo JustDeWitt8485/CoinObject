@@ -1,3 +1,15 @@
+let backgroundI = document.querySelector("html")
+let bod = document.querySelector("body")
+let title = document.createElement("h1")
+let para = document.createTextNode("Coin Object")
+title.appendChild(para);
+bod.appendChild(title);
+title.style.display = "flex";
+title.style.justifyContent = "center";
+title.style.alignItems = "center";
+title.style.color = "red";
+backgroundI.style.color = "red";
+backgroundI.style.background = "black";
 const coin = {
     state: 0,
     flip: function () {
@@ -59,14 +71,5 @@ function display20Images() {
 display20Flips()
 display20Images()
 
-let backgroundI = document.querySelector("html")
-let title = document.querySelector("h1")
-// let para = document.createTextNode("Coin Object")
-// title.appendChild(para)
 
-title.style.color = "red";
-title.style.display = "flex";
-title.style.justifyContent = "center";
-title.style.alignItems = "center";
-backgroundI.style.background = "black";
 
